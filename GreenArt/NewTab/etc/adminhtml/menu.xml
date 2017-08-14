@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="GreenArt_NewTab::GreenArt" title="GreenArt" module="GreenArt_NewTab" sortOrder="0" resource="GreenArt_NewTab::GreenArt"/>
+        <add id="GreenArt_NewTab::GreenArt_Level_02" title="GreenArt Level 2" translate="title" module="Magento_Catalog" sortOrder="10" parent="GreenArt_NewTab::GreenArt" action="greenart/index/index/" resource="Magento_Catalog::products"/>
+        <add id="GreenArt_NewTab::catalog_products" title="Catalog" translate="title" module="Magento_Catalog" sortOrder="10" parent="GreenArt_NewTab::GreenArt" action="catalog/product/" resource="Magento_Catalog::products"/>
+    </menu>
+</config>
